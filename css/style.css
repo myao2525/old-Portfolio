@@ -1,0 +1,431 @@
+.background{
+    background-image: url('../img/berry.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+.background p{
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: center;
+}
+.daiya{
+    position: absolute;
+    animation: fuwafuwa 5s infinite linear;
+    top: 50%;
+    left: 50%;
+    margin-left: -195px;
+    margin-top: -137px;
+}
+.daiya img{
+    width: 390px;
+    height: 274px;
+}
+@keyframes fuwafuwa {
+    0% {transform:translate(0, 0);}
+    20% {transform:translate(3px, 10px);}
+    40% {transform:translate(-3px, -10px);}
+    60% {transform:translate(-3px, 10px);}
+    80% {transform:translate(3px, -10px);}
+    100% {transform:translate(0, 0);}
+}
+.header{
+    z-index: 100;
+    position: fixed;
+    display: table;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    text-shadow:2px 2px 2px rgba(0,0,0,0.3);
+
+}
+
+.headerMenu{
+    position: absolute;
+    right: 0;
+    width: 520px;
+    font-size: 40px;
+}
+.headerMenu::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.headerMenu li{
+    float: left;
+    margin-left: 20px;
+}
+.headerMenu a{
+    color: white;
+    position: relative;
+}
+.headerMenu a::after{
+    content:"";
+    height: 2px;
+    width: 0;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transition:0.7s;
+}
+.headerMenu a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.contents{
+    position: relative;
+    top: 700px;
+    width: 100%;
+    display: table-cell;
+}
+.firstWrapper li{
+    float: left;
+    width: 50%;
+    height: 700px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+}
+.firstWrapper ul{
+    width: 100%;
+}
+.firstWrapper{
+    width: 100%;
+    height: 700px;
+}
+.leftWrapper{
+    background: white;
+    width: 100%;
+    height: 700px;
+    margin-top: 0;
+}
+.aboutUp{
+    background: white;
+    width: 100%;
+    height: 150px;
+    display: table;
+}/*
+.aboutUp::after{
+    content:"";
+    display: block;
+    clear: both;
+}*/
+.aboutUp p{
+    display: table-cell;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(58, 21, 12);
+    font-size: 40px;
+    font-weight:bolder;
+}
+.aboutUp h2{
+    display: table-cell;
+    color: rgba(236, 135, 61, 0.99);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight:bolder;
+}
+.aboutUp::after{
+    display: table-cell;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+#mozi{
+    color: rgba(236, 135, 61, 0.99);
+}
+#small{
+    font-size: 20px;
+}
+.aboutDown{
+    background-image: url('../img/s-girl.jpg');
+/*    width: 683px;*/
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.aboutDown::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.rightWrapper{
+    width: 100%;
+    height: 700px;
+}
+.skill{
+    background-image: url('../img/pc.jpg');
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.skill::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.cover p{
+    display: table-cell;
+    width: 100%;
+    float: left;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 35px;
+}
+.cover{
+    display: table-cell;
+    background:rgba(0,0,0,0.4);
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 450px;
+}
+.act{
+    height: 250px;
+}
+.act::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.actBlock1{
+    background: white;
+    width: 50%;
+    height:250px;
+    color: rgb(58, 21, 12);
+    font-size: 30px;
+    font-weight:bolder;
+    float: left;
+}
+.actBlock2{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/mery.jpg');
+    width: 50%;
+    height:250px;
+    color: rgb(58, 21, 12);
+    font-size: 30px;
+    font-weight:bolder;
+    float: left;
+}
+.actWrapper{
+    width: 1020px;
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+.actWrapper li{
+    width: 234px;
+}
+
+.actRect1{
+    background-image: url('../img/circlepage-1.jpg');
+    width: 100%;
+    height: 234px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.actRect2{
+    background-image: url('../img/circlepage-2.jpg');
+    width: 100%;
+    height: 234px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.actRect3{
+    background-image: url('../img/b-left1.jpg');
+    width: 100%;
+    height: 234px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.actRect4{
+    background-image: url('../img/b-right.jpg');
+    width: 100%;
+    height: 234px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.actCover p{
+    display: table-cell;
+    width: 100%;
+    float: left;
+    color: #42210B;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 35px;
+}
+.actCover{
+    display: table-cell;
+    background:rgba(255,255,255,0.4);
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+/*.actRect1,
+.actRect2{
+    height: 234px;
+}
+.actRect1{
+    background: white;
+    display: table;
+    width: 100%;
+}*/
+.actMozi{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.actMozi p{
+    color: rgb(58, 21, 12);
+    font-size: 20px;
+    font-weight:bold;
+}
+.sub{
+    padding: 0 5px;
+    color: rgba(58, 21, 12, 0.7);
+    margin-top:20px;
+    font-size: 18px;
+    word-break: normal;
+}
+/*.actRect2{
+    background-size: cover;
+    background-position: center;
+}*/
+/*.actContent{
+    display: table;
+    float: left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-size:cover;
+    background-position: center;
+    margin: 60px;
+}
+.actContent a{
+    display: block;
+}
+.actContent p:hover{
+    opacity: 1;
+}
+.actContent p{
+    font-size: 20px;
+    color: rgb(248, 225, 177);
+    opacity: 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    transition:0.5s;
+}*/
+.girlWrapper{
+    background-image: url('../img/phone.JPG');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: table;
+}
+.girl{
+    display: table;
+    width: 100%;
+    height: 600px;
+    background: rgba(0,0,0,0.3);
+}
+.girl p{
+    margin-top:20px;
+    display: table-cell;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    font-size: 40px;
+}
+.contact{
+    width: 100%;
+    height: 150px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+}
+.contact p{
+    color: rgb(58, 21, 12);
+    font-size: 30px;
+    text-align: center;
+}
+.contact ul::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.contact i{
+    margin-right: 10px;
+    color: white;
+    font-size: 40px;
+}
+.footer{
+    background: white;
+}
+.footer p{
+    color: rgb(58, 21, 12);
+    text-align: center;
+    line-height: 30px;
+}
+
+/*pagetop　ボタン*/
+#page-top{
+    width:50px;
+    height:50px;
+    display:none;
+    position:fixed;
+    right: 76px;
+    bottom:16px;
+}
+#page-top p{
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-size: 120px;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    transition:all 0.3s;
+}
+#page-top p:hover{
+    background:none;
+}
+#move-page-top{
+    color: rgba(236, 135, 61, 0.99);
+    line-height:50px;
+    text-decoration:none;
+    display:block;
+    cursor:pointer;
+}
+
+/*loading*/
+#loading{
+    position:absolute;
+    left:50%;
+    top:20%;
+    margin-left:-30px;
+}
+
+#contents{
+    display:none;
+}
